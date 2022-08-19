@@ -2,7 +2,7 @@ import React from 'react';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Login from '@screens/Auth/Login';
+import Login from '@screens/Tests/1.Base';
 
 import theme from '@theme/index';
 

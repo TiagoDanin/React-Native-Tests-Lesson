@@ -1,6 +1,10 @@
 module.exports = {
   preset: 'react-native',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  setupFiles: [
+    './node_modules/react-native-gesture-handler/jestSetup.js',
+    './jestSetupFile.js',
+  ],
   moduleNameMapper: {
     '^.+\\.svg$': '<rootDir>/src/tests/mocks/svgMock.ts',
   },
@@ -11,6 +15,7 @@ module.exports = {
     '@testing-library/jest-native/extend-expect',
     'jest-styled-components',
   ],
+  // eslint-disable-next-line no-dupe-keys
   setupFiles: [
     './node_modules/react-native-gesture-handler/jestSetup.js',
     './jestSetupFile.js',
